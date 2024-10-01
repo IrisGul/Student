@@ -1,10 +1,14 @@
 public class Student
 {
-    private String name;
-    private int alter;
+    private String name;  // Zeilen commentare: Name Studierende
+    private int alter;    
     private String religion;
     private boolean matura;
     
+    /* Block kommentare:
+     * hier wird geschrieben 
+     * conctructor
+     */
     public Student(String neuName, int neuAlter,String neuReligion,boolean neuMatura)
     { 
          setName(neuName);
@@ -12,7 +16,6 @@ public class Student
          setReligion(neuReligion);
          setMatura(neuMatura);
     }
-    
     public void setName(String neuName)
     {
         name=neuName;
