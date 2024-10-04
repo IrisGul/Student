@@ -1,6 +1,6 @@
 public class Student
 {
-    private String name;  // Zeilen commentare: Name Studierende
+    private String name;  // Zeilen commentare: 
     private int alter;    
     private String religion;
     private boolean matura;
@@ -15,6 +15,34 @@ public class Student
          setAlter(neuAlter);
          setReligion(neuReligion);
          setMatura(neuMatura);
+    }
+    public Student(String neuName, int neuAlter, String neuReligion)
+    {
+        setName(neuName);
+        setAlter(neuAlter);
+        setReligion(neuReligion);
+        setMatura(false);
+    }
+    public Student(String neuName, int neuAlter)
+    {
+        setName(neuName);
+        setAlter(neuAlter);
+        setReligion("OB");
+        setMatura(false);
+    }
+    public Student(String neuName)
+    {
+        setName(neuName);
+        setAlter(14);
+        setReligion("OB");
+        setMatura(false);
+    }
+    public Student()
+    {
+        setName("UNKN");
+        setAlter(14);
+        setReligion("OB");
+        setMatura(false);
     }
     public void setName(String neuName)
     {
